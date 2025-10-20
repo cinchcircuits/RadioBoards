@@ -103,6 +103,9 @@
 #elif defined(RADIO_BOARD_XIAO_ESP32S3)
   #include "maintained/SeeedStudio/XIAO_ESP32S3.h"
 
+#elif defined(RADIO_BOARD_RADIOHAT_REV_A)
+  #include "maintained/RadioHAT/RadioHAT.h"
+
 #elif defined(RADIO_BOARD_WAVESHARE_LORAWAN_HAT)
   #include "maintained/Waveshare/LoRaWAN_Hat.h"
 
