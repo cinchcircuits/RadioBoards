@@ -31,6 +31,9 @@
   #elif defined(__ASR6501__) || defined(ARDUINO_ARCH_ASR650X) || defined(DARDUINO_ARCH_ASR6601)
     #define RADIO_BOARD_CUBECELL
 
+  #elif defined(ARDUINO_XIAO_ESP32C3)
+    #define RADIO_BOARD_XIAO_ESP32C3
+
   #elif defined(ARDUINO_XIAO_ESP32S3)
     #define RADIO_BOARD_XIAO_ESP32S3
   
@@ -124,6 +127,9 @@
 
 #elif defined(RADIO_BOARD_WAVESHARE_RP2040_LORA)
   #include "contributed/Waveshare/RP2040_LoRa.h"
+
+#elif defined(RADIO_BOARD_XIAO_ESP32C3)
+  #include "contributed/SeeedStudio/XIAO_ESP32C3.h"
 
 #else
   #error "Unsupported or unknown radio board!"
